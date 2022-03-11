@@ -16,6 +16,10 @@ class Login extends React.Component {
         this.props.navigation.navigate('landing')
     };
 
+    openPhoneNumberPage = () => {
+        this.props.navigation.navigate('phone_number')
+    };
+
     render() {
         return (
             <View style={styles.main}>
@@ -31,11 +35,11 @@ class Login extends React.Component {
 
                     <Text style={styles.slogan}>Connectez vous simplement !</Text>
 
-                    <SocialConnectButton type={'facebook'}/>
+                    <SocialConnectButton type={'facebook'} onPress={this.openPhoneNumberPage}/>
 
-                    <SocialConnectButton type={'google'}/>
+                    <SocialConnectButton type={'google'} onPress={this.openPhoneNumberPage}/>
 
-                    <SocialConnectButton type={'call'}/>
+                    <SocialConnectButton type={'call'} onPress={this.openPhoneNumberPage}/>
 
                 </View>
 

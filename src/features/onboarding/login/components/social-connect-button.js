@@ -1,11 +1,11 @@
 import * as React from 'react';
 import {TouchableOpacity, Text, StyleSheet, Image} from 'react-native';
 
-const SocialConnectButton = ({type}) => {
+const SocialConnectButton = (props) => {
 
     var socialName = null, socialLogo = null, socialButtonStyle = null, socialButtonTextStyle = null;
 
-    switch(type){
+    switch(props.type){
 
         case 'facebook':
             socialName = 'Continuer avec Facebook';
@@ -31,9 +31,13 @@ const SocialConnectButton = ({type}) => {
 
     return (
 
-        <TouchableOpacity style={socialButtonStyle}>
+        <TouchableOpacity
+            style={socialButtonStyle}
+            {...props}>
+
             <Image source={socialLogo} style={styles.buttonIcon}/>
             <Text style={socialButtonTextStyle}>{socialName}</Text>
+
         </TouchableOpacity>
 
     )

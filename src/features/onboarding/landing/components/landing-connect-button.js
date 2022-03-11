@@ -12,6 +12,7 @@ const LandingConnectButton = (props) => {
             <Image
                 source={require('../../../../assets/hello-hand.png')}
                 style={styles.helloImg}></Image>
+
         </TouchableOpacity>
     )
 };

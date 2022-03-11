@@ -6,6 +6,7 @@ const Stack = createNativeStackNavigator();
 
 import Landing from '../features/onboarding/landing/landing.screen';
 import Login from '../features/onboarding/login/login.screen';
+import PhoneNumber from '../features/onboarding/phone_number/phone_number.screen';
 
 const rootContainer = () => {
     return (
@@ -24,6 +25,10 @@ const rootContainer = () => {
                 <Stack.Screen
                     name="login"
                     component={Login}
+                />
+                <Stack.Screen
+                    name="phone_number"
+                    component={PhoneNumber}
                 />
 
             </Stack.Navigator>

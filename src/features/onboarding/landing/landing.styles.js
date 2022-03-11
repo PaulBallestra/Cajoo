@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         marginTop: 25,
         color: '#494967',
         fontSize: 22,
-        letterSpacing: 1.5,
+        letterSpacing: 1.1,
         textAlign: 'center',
         fontFamily: 'EricaOne-Regular'
     },

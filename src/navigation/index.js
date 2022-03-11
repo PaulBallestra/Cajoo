@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
 
 import Landing from '../features/onboarding/landing/landing.screen';
+import Login from '../features/onboarding/login/login.screen';
 
 const rootContainer = () => {
     return (
@@ -20,6 +21,11 @@ const rootContainer = () => {
                     name="landing"
                     component={Landing}
                 />
+                <Stack.Screen
+                    name="login"
+                    component={Login}
+                />
+
             </Stack.Navigator>
 
         </NavigationContainer>

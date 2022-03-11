@@ -1,9 +1,13 @@
 import * as React from 'react';
 import {TouchableOpacity, Text, StyleSheet, Image} from 'react-native';
 
-const LandingConnectButton = () => {
+const LandingConnectButton = (props) => {
+
     return (
-        <TouchableOpacity style={styles.connectBtn}>
+        <TouchableOpacity
+            style={styles.connectBtn}
+            {...props}>
+
             <Text style={styles.connectBtnText}>ME CONNECTER</Text>
             <Image
                 source={require('../../../../assets/hello-hand.png')}

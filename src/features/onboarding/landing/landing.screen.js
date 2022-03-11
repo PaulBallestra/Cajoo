@@ -3,7 +3,6 @@ import {
     View,
     Text,
     Image,
-    TouchableOpacity,
 } from 'react-native';
 
 import styles from './landing.styles'
@@ -13,6 +12,10 @@ import LandingDiscoverButton from './components/landing-discover-button';
 
 
 class Landing extends React.Component {
+
+    openLoginPage = () => {
+        this.props.navigation.navigate('login')
+    };
 
     render() {
         return (
@@ -26,7 +29,8 @@ class Landing extends React.Component {
                     Vos courses en 3 clics !
                 </Text>
 
-                <LandingConnectButton/>
+                <LandingConnectButton onPress={this.openLoginPage}/>
+
                 <LandingDiscoverButton/>
 
             </View>

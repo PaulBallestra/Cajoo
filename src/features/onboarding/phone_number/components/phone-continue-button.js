@@ -1,11 +1,11 @@
 import * as React from 'react';
 import {TouchableOpacity, Text, StyleSheet} from 'react-native';
 
-const PhoneContinueButton = () => {
+const PhoneContinueButton = (props) => {
 
     return (
 
-        <TouchableOpacity disabled={true} style={styles.continueButton}>
+        <TouchableOpacity disabled={false} style={styles.continueButton} {...props}>
             <Text style={styles.continueBtnText}>CONTINUER</Text>
         </TouchableOpacity>
 

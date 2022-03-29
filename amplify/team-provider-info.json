@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cajoo-dev-190100-authRole",
+      "UnauthRoleArn": "arn:aws:iam::213930627832:role/amplify-cajoo-dev-190100-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::213930627832:role/amplify-cajoo-dev-190100-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-cajoo-dev-190100-deployment",
+      "UnauthRoleName": "amplify-cajoo-dev-190100-unauthRole",
+      "StackName": "amplify-cajoo-dev-190100",
+      "StackId": "arn:aws:cloudformation:eu-west-3:213930627832:stack/amplify-cajoo-dev-190100/cf3790d0-af81-11ec-9c3b-0e395c1003d0",
+      "AmplifyAppId": "de7vfbsgru1kj"
+    }
+  }
+}

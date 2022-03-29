@@ -22,10 +22,12 @@ const rootContainer = () => {
                     name="landing"
                     component={Landing}
                 />
+
                 <Stack.Screen
                     name="login"
                     component={Login}
                 />
+
                 <Stack.Screen
                     name="phone_number"
                     component={PhoneNumber}

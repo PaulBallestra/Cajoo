@@ -8,6 +8,7 @@ import {
 
 import styles from './login.styles'
 
+//Components
 import SocialConnectButton from './components/social-connect-button';
 
 class Login extends React.Component {
@@ -35,9 +36,9 @@ class Login extends React.Component {
 
                     <Text style={styles.slogan}>Connectez vous simplement !</Text>
 
-                    <SocialConnectButton type={'facebook'} onPress={this.openPhoneNumberPage}/>
+                    <SocialConnectButton type={'facebook'}/>
 
-                    <SocialConnectButton type={'google'} onPress={this.openPhoneNumberPage}/>
+                    <SocialConnectButton type={'google'}/>
 
                     <SocialConnectButton type={'call'} onPress={this.openPhoneNumberPage}/>
 
